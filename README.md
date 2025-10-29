@@ -6,7 +6,6 @@ A simple Flask + SQLite web app to track personal expenses.
 import sqlite3
 from datetime import datetime
 
-# ---------- DATABASE SETUP ----------
 conn = sqlite3.connect("expenses.db")
 cursor = conn.cursor()
 
@@ -20,8 +19,6 @@ CREATE TABLE IF NOT EXISTS expenses (
 )
 """)
 conn.commit()
-
-# ---------- FUNCTIONS ----------
 
 def add_expense():
     name = input("Enter expense name: ")
@@ -72,8 +69,6 @@ def search_by_category():
         print(f"ID: {row[0]} | {row[1]} | ₹{row[3]} | {row[4]}")
     print()
 
-
-# ---------- MAIN MENU ----------
 def main():
     while True:
         print("==== Personal Expense Tracker ====")
