@@ -1,5 +1,14 @@
 # personal-expense-tracker
 A simple Flask + SQLite web app to track personal expenses.
+This app will help you to track all your expense .
+
+🧾 Features:
+
+✅ Add a new expense
+✅ View all expenses
+✅ View total spending
+✅ Delete an expense
+✅ Search by category
 
 #----------CODE----------#
 
